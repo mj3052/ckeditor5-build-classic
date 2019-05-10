@@ -86,5 +86,10 @@
     "hooks": {
       "pre-commit": "lint-staged"
     }
+  },
+  "dependencies": {
+    "@ckeditor/ckeditor5-font": "^11.1.0",
+    "@ckeditor/ckeditor5-remove-format": "^10.0.0",
+    "ckeditor5-line-height": "^0.3.1"
   }
 }
