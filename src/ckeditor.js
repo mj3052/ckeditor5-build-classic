@@ -8,6 +8,8 @@ import ClassicEditorBase from '@ckeditor/ckeditor5-editor-classic/src/classicedi
 
 import Essentials from '@ckeditor/ckeditor5-essentials/src/essentials';
 
+import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
+
 import Bold from '@ckeditor/ckeditor5-basic-styles/src/bold';
 import Italic from '@ckeditor/ckeditor5-basic-styles/src/italic';
 
@@ -30,6 +32,8 @@ ClassicEditor.builtinPlugins = [
 	Font,
 	RemoveFormat,
 	LineHeight,
+
+	Alignment,
 ];
 
 // Editor configuration.
@@ -39,6 +43,7 @@ ClassicEditor.defaultConfig = {
 			'fontSize',
 			'fontColor',
 			'lineHeight',
+			'alignment',
 			'bold',
 			'italic',
 			'|',
@@ -81,6 +86,10 @@ ClassicEditor.defaultConfig = {
 			2.25,
 			2.5
 		]
+	},
+
+	alignment: {
+		options: [ 'left', 'right', 'center' ]
 	},
 
 	// This value must be kept in sync with the language defined in webpack.config.js.
